@@ -1,0 +1,66 @@
+/* Tu CSS existente */
+*{
+    margin: 100;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+/* CSS existente */
+
+/*Modal de registro*/
+.modal__registro {
+    width: 70%;
+    margin: auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    margin-top: 40px; /* Ajusta la distancia desde la parte superior según sea necesario */
+}
+
+.modal__registro h2 {
+    text-align: center;
+    color: rgb(170, 86, 191);
+}
+
+.modal__registro input {
+    width: calc(100% - 40px);
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+
+.modal__registro button {
+    width: calc(100% - 20px);
+    padding: 10px 0;
+    margin-top: 20px;
+    border: none;
+    background: rgb(202, 154, 212);
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    position: center;
+}
+

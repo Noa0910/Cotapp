@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url(../img/BC.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(170, 86, 191, 0.481);
+    border: 0;
+    border-radius: 5px;
+
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: absolute;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.columna {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+.columna label {
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+.columna_2 {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.columna_2 label {
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+/* Limpiar el float después de cada par de etiquetas */
+.columna label:nth-child(even) {
+    clear: both;
+}
+
+
+/*Formularios*/
+
+.contenedor__blanco-register{
+    display: flex;
+    align-items: center;
+    width: 300%;
+    max-width: 900px;
+    position: relative;
+    top: -90px;
+    left: 10px;
+}
+
+.contenedor__blanco-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: relative;
+    border-radius: 20px;
+}
+
+.contenedor__blanco-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(170, 86, 191);
+}
+
+.contenedor__blanco-register form label{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+
+
+.formulario__blanco{
+    opacity: 1;
+    display: block;
+}
+
+
+
+@media screen and (max-width: 850px){
+
+    /*Formularios*/
+
+    .contenedor__blanco-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__blanco-register form{
+        position: relative;
+    }
+}
+
+/*CSS para pop up*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    background: rgb(170, 86, 191);
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+  }
+
+.modal-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;  
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.3s ease;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  background-color: #fff;
+  width: 600px;
+  max-width: 100%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal h1 {
+  margin: 0;
+}
+
+.modal p {
+  opacity: 0.7;
+  font-size: 14px;
+}
+

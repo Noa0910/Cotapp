@@ -1,0 +1,69 @@
+/**
+* Template Name: Append
+* Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
+* Updated: Mar 17 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# Font & Color Variables
+# Help: https://bootstrapmade.com/color-system/
+--------------------------------------------------------------*/
+/* Fonts */
+body {
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Montserrat", sans-serif;
+    --nav-font: "Lato", sans-serif;
+  }
+  
+  /* Global Colors */
+  body {
+    --background-color: #ffffff;
+    --background-color-rgb: 255, 255, 255;
+    --default-color: #212529;
+    --default-color-rgb: 33, 37, 41;
+    --accent-color: rgb(170, 86, 191);
+    --accent-color-rgb: 232, 69, 69;
+    --heading-color: #32353a;
+    --heading-color-rgb: 50, 53, 58;
+    --contrast-color: #ffffff;
+    --contrast-color-rgb: 255, 255, 255;
+  }
+  
+  /* Nav Menu Colors */
+  body {
+    --nav-color: #3a3939;
+    --nav-hover-color: #e84545;
+    --nav-dropdown-color: #3a3939;
+    --nav-dropdown-hover-color: #e84545;
+    --nav-dropdown-background-color: #ffffff;
+  }
+  
+  /* Smooth scroll */
+  body {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    padding: 20px 100px;
+  }
+  
+  h1 {
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    text-align: center;
+  }
+  
+  button {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    border: 0;
+    padding: 15px 100px;
+    transition: 0.4s;
+    border-radius: 20px;
+    width: 33.33%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  

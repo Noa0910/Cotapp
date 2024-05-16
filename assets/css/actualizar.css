@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    width: 90%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(170, 86, 191, 0.481);
+
+}
+
+.caja__trasera div{
+    margin: 5px 40px;
+    color: white;
+    transition: all 700ms;
+}
+
+.caja__trasera div h3{
+    font-weight: 10;
+    font-size: 26px;
+}
+
+.caja__trasera div p{
+    font-size: 16px;
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 700ms;
+}
+
+.caja__trasera button:hover{
+    background: #fff;
+    color: rgb(170, 86, 191);
+}
+
+/* Formulario de Actualizar Datos */
+.formulario__actualizar{
+    width: 100%;
+    padding: 20px 20px;
+    background: white;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.formulario__actualizar input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+
+.formulario__actualizar button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: rgb(170, 86, 191);
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+/* Estilos del Pop-up */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    z-index: 1000;
+    display: none;
+}
+
+.popup p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.popup.show {
+    display: block;
+}

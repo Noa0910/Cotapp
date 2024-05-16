@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/resumen.css">
+</head>
+<body>
+
+        <main>
+
+            <div class="contenedor__todo">
+                <!--Formulario de resumen-->
+                <div class="caja__trasera">
+                    <div class="contenedor__blanco-register">
+                        <form action="" class="formulario__blanco">
+                            <h2>Resumen de compra</h2>
+                            <div class="columna">
+                                <label>Fecha:</label>
+                                <label>Cotización N°:</label>
+                                <label>Descripción:</label>
+                                <label>Cantidad</label>
+                            </div>
+                            <div class="columna_2">
+                                <label><time id="fecha_actual"></time></label>
+                                <label>001</label>
+                                <label>Viniltex Baños y Cocinas</label>
+                                <label>01</label>
+                                <label style="position: absolute; top: 72%; left: 70%; width: 140px;">Total: 42.900$</label>
+                            </div>
+                            <button>Regresar</button>
+                        </form>
+                        <button id="open" style="position: absolute;top: 80%;left: 70%;">Generar cotización</button>
+                    </div>
+                </div>
+                    <div id="modal_container" class="modal-container">
+                        <div class="modal">
+                                <h1>Cotización generada con exito!</h1>
+                                <p>
+                                    <br>Tu codigo de cotización es: CO201
+                                </p>
+                            <button id="close">Cerrar</button>
+                        </div>
+                        </div>
+                    
+        </main>
+
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/pop.js"></script>
+
+        <!--script para fecha-->
+        <script>
+            var fechaElemento = document.getElementById('fecha_actual');
+            var fechaActual = new Date();
+            var dia = fechaActual.getDate();
+            var mes = fechaActual.getMonth() + 1;
+            var año = fechaActual.getFullYear();
+            var fechaFormateada = dia.toString().padStart(2, '0') + '/' + mes.toString().padStart(2, '0') + '/' + año;
+            fechaElemento.textContent = fechaFormateada;
+        </script>
+</body>
+</html>
